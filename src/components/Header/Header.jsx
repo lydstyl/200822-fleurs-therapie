@@ -4,17 +4,25 @@ import React from "react"
 
 import Burger from "../Burger/Burger"
 
+import MenuLinks from "../MenuLinks/MenuLinks"
+
 import "./style.scss"
 
 const Header = ({ siteTitle }) => (
   <>
-    <Burger />
+    <div className="desktop-no-burger">
+      <Burger />
+    </div>
 
     <header>
-      <div>
+      <div className="header-elements">
         <h1>
           <Link to="/">{siteTitle}</Link>
         </h1>
+
+        <div className="desktop-menu-links">
+          <MenuLinks isClass={false} />
+        </div>
       </div>
     </header>
   </>

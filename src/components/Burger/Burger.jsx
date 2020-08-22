@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 
-import { Link } from "gatsby"
+import MenuLinks from "../MenuLinks/MenuLinks"
 
 import "./style.scss"
 
@@ -26,29 +26,7 @@ const Burger = ({ siteTitle }) => {
     <>
       {/* Navigation */}
       <div className={`b-nav ${open}`}>
-        <li>
-          <Link onClick={handleClick2} className="b-link" to="/">
-            Accueil
-          </Link>
-        </li>
-
-        <li>
-          <Link onClick={handleClick2} className="b-link" to="/origines/">
-            Origines
-          </Link>
-        </li>
-
-        <li>
-          <Link onClick={handleClick2} className="b-link" to="/metier/">
-            Mon métier
-          </Link>
-        </li>
-
-        <li>
-          <Link onClick={handleClick2} className="b-link" to="/contact/">
-            Contact
-          </Link>
-        </li>
+        <MenuLinks handleClick={handleClick2} isClass={true} />
       </div>
 
       {/* Burger-Icon */}

@@ -2,8 +2,11 @@ header {
   margin-bottom: 1.45rem;
   background: rebeccapurple;
 
-  div {
+  .header-elements {
     max-width: 960px;
+
+    display: flex;
+    justify-content: space-between;
 
     h1 {
       margin: 0;
@@ -12,6 +15,26 @@ header {
       a {
         color: white;
         text-decoration: none;
+      }
+    }
+  }
+}
+
+.desktop-menu-links {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .desktop-menu-links {
+    display: flex;
+
+    li {
+      padding-left: 30px;
+      list-style: none;
+
+      a {
+        color: white;
+        line-height: 100px;
       }
     }
   }
