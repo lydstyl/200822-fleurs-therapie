@@ -1,31 +1,31 @@
-import React from "react"
-import PropTypes from "prop-types"
-
 import { Link } from "gatsby"
+import PropTypes from "prop-types"
+import React from "react"
 
-const Header2 = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <p>
-      <Link to="/origines/">Origines</Link>
-      <br />
-      <Link to="/metier/">Mon métier</Link>
-      <br />
-      <Link to="/contact/">Contact</Link>
-    </p>
-  </header>
+import Burger from "../Burger/Burger"
+
+import "./style.scss"
+
+const Header = ({ siteTitle }) => (
+  <>
+    <Burger />
+
+    <header>
+      <div>
+        <h1>
+          <Link to="/">{siteTitle}</Link>
+        </h1>
+      </div>
+    </header>
+  </>
 )
 
-Header2.propTypes = {
+Header.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-Header2.defaultProps = {
+Header.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header2
+export default Header
