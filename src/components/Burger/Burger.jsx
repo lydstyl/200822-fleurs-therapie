@@ -24,7 +24,7 @@ const Burger = ({ siteTitle }) => {
 
   return (
     <>
-      {/* <!-- Navigation --> */}
+      {/* Navigation */}
       <div className={`b-nav ${open}`}>
         <li>
           <Link onClick={handleClick2} className="b-link" to="/">
@@ -51,18 +51,14 @@ const Burger = ({ siteTitle }) => {
         </li>
       </div>
 
-      {/* <!-- Burger-Icon --> */}
+      {/* Burger-Icon */}
       <div className={`b-container ${open}`}>
+        {/* eslint-disable-next-line */}
         <div className="b-menu" onClick={handleClick}>
           <div className="b-bun b-bun--top"></div>
           <div className="b-bun b-bun--mid"></div>
           <div className="b-bun b-bun--bottom"></div>
         </div>
-
-        {/* <!-- Burger-Brand --> */}
-        <a href="#" className="b-brand">
-          {/* Burger */}
-        </a>
       </div>
     </>
   )
