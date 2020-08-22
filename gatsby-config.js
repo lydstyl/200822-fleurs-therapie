@@ -1,3 +1,8 @@
+// require("dotenv").config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// })
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: `Fleurs Thérapie`,
@@ -31,5 +36,13 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
+
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-datocms`,
+      options: {
+        apiToken: process.env.DATO_API_TOKEN,
+      },
+    },
   ],
 }
