@@ -17,6 +17,7 @@ dependencies:
   gatsby-source-filesystem: 2.3.24_gatsby@2.24.47
   gatsby-transformer-remark: 2.8.28_gatsby@2.24.47
   gatsby-transformer-sharp: 2.5.13_afacab807aa4269a775ee27e55012225
+  html-react-parser: 0.13.0_react@16.13.1
   mitt: 2.1.0
   node-sass: 4.14.1
   prop-types: 15.7.2
@@ -2128,6 +2129,16 @@ packages:
     dev: false
     resolution:
       integrity: sha512-orGL5LXERPYsLov6CWs3Fh6203+dXzJkR7OnddIr2514Hsecwc8xRpzCapshBbKFImCsvS/mk6+FWiN5LyZJAQ==
+  /@types/domhandler/2.4.1:
+    dev: false
+    resolution:
+      integrity: sha512-cfBw6q6tT5sa1gSPFSRKzF/xxYrrmeiut7E0TxNBObiLSBTuFEHibcfEe3waQPEDbqBsq+ql/TOniw65EyDFMA==
+  /@types/domutils/1.7.2:
+    dependencies:
+      '@types/domhandler': 2.4.1
+    dev: false
+    resolution:
+      integrity: sha512-Nnwy1Ztwq42SSNSZSh9EXBJGrOZPR+PQ2sRT4VZy8hnsFXfCil7YlKO2hd2360HyrtFz2qwnKQ13ENrgXNxJbw==
   /@types/eslint-visitor-keys/1.0.0:
     dev: false
     resolution:
@@ -2165,6 +2176,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-2xtoL22/3Mv6a70i4+4RB7VgbDDORoWwjcqeNysojZA0R7NK17RbY5Gof/2QiFfJgX+KkWghbwJ+d/2SB8Ndzg==
+  /@types/htmlparser2/3.10.1:
+    dependencies:
+      '@types/domhandler': 2.4.1
+      '@types/domutils': 1.7.2
+      '@types/node': 14.6.0
+    dev: false
+    resolution:
+      integrity: sha512-fCxmHS4ryCUCfV9+CJZY1UjkbR+6Al/EQdX5Jh03qBj9gdlPG5q+7uNoDgE/ZNXb3XNWSAQgqKIWnbRCbOyyWA==
   /@types/http-proxy/1.17.4:
     dependencies:
       '@types/node': 14.6.0
@@ -5408,6 +5427,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-l0IU0pPzLWSHBcieZbpOKgkIn3ts3vAh7ZuFyXNwJxJXk/c4Gwj9xaTJwIDVQCXawWD0qb3IzMGH5rglQaO0XA==
+  /dom-serializer/0.2.2:
+    dependencies:
+      domelementtype: 2.0.1
+      entities: 2.0.3
+    dev: false
+    resolution:
+      integrity: sha512-2/xPb3ORsQ42nHYiSunXkDjPLBaEj/xTwUO4B7XCZQTRk7EBtTOPaygh10YAAh2OI1Qrp6NWfpAhzswj0ydt9g==
   /dom-serializer/1.0.1:
     dependencies:
       domelementtype: 2.0.1
@@ -5458,7 +5484,7 @@ packages:
       integrity: sha1-3NhIiib1Y9YQeeSMn3t+Mjc2gs8=
   /domutils/1.7.0:
     dependencies:
-      dom-serializer: 0.1.1
+      dom-serializer: 0.2.2
       domelementtype: 1.3.1
     dev: false
     resolution:
@@ -8435,10 +8461,30 @@ packages:
     dev: false
     resolution:
       integrity: sha512-P+M65QY2JQ5Y0G9KKdlDpo0zK+/OHptU5AaBwUfAIDJZk1MYf32Frm84EcOytfJE0t5JvkAnKlmjsXDnWzCJmQ==
+  /html-dom-parser/0.3.0:
+    dependencies:
+      '@types/domhandler': 2.4.1
+      domhandler: 2.4.2
+      htmlparser2: 3.10.1
+    dev: false
+    resolution:
+      integrity: sha512-WDEYpO5gHGKuJbf0rwndGq7yUHJ4xboNj9l9mRGw5RsKFc3jfRozCsGAMu69zXxt4Ol8UkbqubKxu8ys0BLKtA==
   /html-entities/1.3.1:
     dev: false
     resolution:
       integrity: sha512-rhE/4Z3hIhzHAUKbW8jVcCyuT5oJCXXqhN/6mXXVCpzTmvJnoH2HL/bt3EZ6p55jbFJBeAe1ZNpL5BugLujxNA==
+  /html-react-parser/0.13.0_react@16.13.1:
+    dependencies:
+      '@types/htmlparser2': 3.10.1
+      html-dom-parser: 0.3.0
+      react: 16.13.1
+      react-property: 1.0.1
+      style-to-object: 0.3.0
+    dev: false
+    peerDependencies:
+      react: ^0.14 || ^15 || ^16
+    resolution:
+      integrity: sha512-hU94hE2p9xhMM61EOoiY3Kr+DfzH/uY7hGeVXQpGFRjgbYRUeyuSKORDNMIaY8IAcuHQ6Ov9pJ3x94Wvso/OmQ==
   /html-tag-names/1.1.5:
     dev: false
     resolution:
@@ -12837,6 +12883,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+  /react-property/1.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-1tKOwxFn3dXVomH6pM9IkLkq2Y8oh+fh/lYW3MJ/B03URswUTqttgckOlbxY2XHF3vPG6uanSc4dVsLW/wk3wQ==
   /react-reconciler/0.24.0_react@16.13.1:
     dependencies:
       loose-envify: 1.4.0
@@ -16548,6 +16598,7 @@ specifiers:
   gatsby-source-filesystem: ^2.3.24
   gatsby-transformer-remark: ^2.8.28
   gatsby-transformer-sharp: ^2.5.13
+  html-react-parser: ^0.13.0
   mitt: ^2.1.0
   node-sass: ^4.14.1
   prettier: 2.0.5
