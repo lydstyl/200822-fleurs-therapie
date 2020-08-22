@@ -6,7 +6,7 @@ const MenuLinks = ({ handleClick, isClass }) => {
   return (
     <>
       <li>
-        <Link onClick={handleClick} className={isClass && "b-link"} to="/">
+        <Link onClick={handleClick} className={isClass ? "b-link" : ""} to="/">
           Accueil
         </Link>
       </li>
@@ -14,7 +14,7 @@ const MenuLinks = ({ handleClick, isClass }) => {
       <li>
         <Link
           onClick={handleClick}
-          className={isClass && "b-link"}
+          className={isClass ? "b-link" : ""}
           to="/origines/"
         >
           Origines
@@ -24,7 +24,7 @@ const MenuLinks = ({ handleClick, isClass }) => {
       <li>
         <Link
           onClick={handleClick}
-          className={isClass && "b-link"}
+          className={isClass ? "b-link" : ""}
           to="/metier/"
         >
           Mon métier
@@ -34,7 +34,7 @@ const MenuLinks = ({ handleClick, isClass }) => {
       <li>
         <Link
           onClick={handleClick}
-          className={isClass && "b-link"}
+          className={isClass ? "b-link" : ""}
           to="/contact/"
         >
           Contact
