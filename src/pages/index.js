@@ -7,6 +7,8 @@ import Layout from "../components/Layout/Layout"
 import SEO from "../components/seo"
 // import Image from "../components/image"
 
+import "./style.scss"
+
 const IndexPage = ({ data: { datoCmsHomePage } }) => {
   const {
     title,
