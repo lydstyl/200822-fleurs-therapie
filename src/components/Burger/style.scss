@@ -78,32 +78,6 @@ $b-pad-top: (
 }
 
 body {
-  // &:after {
-  //   background: color(primary);
-  //   content: "";
-  //   height: 100%;
-  //   left: 0;
-  //   opacity: 0;
-  //   overflow: auto;
-  //   padding: 0;
-  //   position: absolute;
-  //   top: 0;
-  //   transition: $b-transition;
-  //   width: 100%;
-  // }
-
-  // &.open {
-  //   overflow: hidden;
-  // }
-
-  // &.open:after {
-  //   opacity: 1;
-  //   visibility: visible;
-  // }
-
-  // &:after {
-  // }
-
   &.open {
     overflow: hidden;
   }
