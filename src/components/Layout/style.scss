@@ -1,3 +1,22 @@
+// @import url("https://fonts.googleapis.com/css2?family=Atma:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Open+Sans&display=swap");
+
 body {
   margin: 0;
+  font-family: "Open Sans", sans-serif;
+  line-height: 2;
+}
+
+h1,
+h2 {
+  font-family: "Allura", cursive;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+h2 {
+  font-size: 40px;
 }
