@@ -27,7 +27,17 @@ const MenuLinks = ({ handleClick, isClass }) => {
           className={isClass ? "b-link" : ""}
           to="/metier/"
         >
-          Mon métier
+          Métier
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          onClick={handleClick}
+          className={isClass ? "b-link" : ""}
+          to="/applications/"
+        >
+          Applications
         </Link>
       </li>
 
