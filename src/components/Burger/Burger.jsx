@@ -11,22 +11,22 @@ const Burger = ({ siteTitle }) => {
   const handleClick = () => {
     const body = document.body
 
-    open === "" ? setOpen("open") : setOpen("")
-
-    body.classList.toggle("open")
-  }
-
-  const handleClick2 = () => {
-    const body = document.body
-
-    body.classList.toggle("open")
+    if (open) {
+      setOpen("")
+      setTimeout(() => {
+        body.classList.toggle("open")
+      }, 300);
+    } else{
+      setOpen("open")
+      body.classList.toggle("open")
+    }
   }
 
   return (
     <>
       {/* Navigation */}
       <div className={`b-nav ${open}`}>
-        <MenuLinks handleClick={handleClick2} isClass={true} />
+        <MenuLinks handleClick={handleClick} isClass={true} />
       </div>
 
       {/* Burger-Icon */}
