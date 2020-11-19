@@ -1,14 +1,7 @@
-$primary: #8BC34A;
-$dark: #558B2F;
-$light: #DCEDC8;
-$secondary: #FFEB3B;
-$secondary: #FF5722;
-
+@import '../../variables.scss';
 
 header {
   margin-bottom: 1.45rem;
-  // background: #138d75;
-  // background: #99FF66;
   background: $dark;
 
   .header-elements {
@@ -44,7 +37,7 @@ header {
 
   li:hover {
     a {
-      color: #FFEB3B;
+      color: $secondary;
     }
   }
 }
