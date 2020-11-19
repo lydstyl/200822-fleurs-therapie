@@ -1,3 +1,9 @@
+$primary: #8BC34A;
+$dark: #558B2F;
+$light: #DCEDC8;
+$secondary: #FF5722;
+$textcolor: #8D6E63;
+
 // @import url("https://fonts.googleapis.com/css2?family=Atma:wght@500&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Allura&family=Open+Sans&display=swap");
@@ -6,11 +12,18 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   line-height: 2;
+
+  background-color: $light;
+
+  strong{
+    color: $textcolor;
+  }
 }
 
 h1,
 h2 {
   font-family: "Allura", cursive;
+  color: $textcolor
 }
 
 h1 {

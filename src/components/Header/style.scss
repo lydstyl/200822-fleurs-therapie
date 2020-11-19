@@ -1,6 +1,15 @@
+$primary: #8BC34A;
+$dark: #558B2F;
+$light: #DCEDC8;
+$secondary: #FFEB3B;
+$secondary: #FF5722;
+
+
 header {
   margin-bottom: 1.45rem;
-  background: #138d75;
+  // background: #138d75;
+  // background: #99FF66;
+  background: $dark;
 
   .header-elements {
     display: flex;
@@ -10,7 +19,7 @@ header {
     margin: auto;
 
     h1 {
-      margin-top: 30px;
+      margin: 0;
       padding-left: 100px;
 
       a {
@@ -24,13 +33,18 @@ header {
 .desktop-menu-links {
   display: none;
 
+  li{
+    line-height: 120px;
+  }
+
   li a {
     font-size: 30px;
+    text-decoration: none;
   }
 
   li:hover {
     a {
-      color: red;
+      color: #FFEB3B;
     }
   }
 }
