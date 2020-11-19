@@ -24,6 +24,7 @@ h1 {
   font-size: 60px;
   text-align: center;
 }
+
 h2 {
   font-size: 40px;
   line-height: 50px;
@@ -36,6 +37,7 @@ p {
 a{
   color: $secondary;
   text-decoration: none;
+  font-weight: bold;
 }
 
 img {
@@ -51,9 +53,26 @@ img {
   margin-bottom: 100px;
 }
 
+main {
+  margin: 0 auto;
+  padding: 10px;
+}
+
 
 @media screen and (min-width: 768px){
   p {
     text-indent: 50px;
   }
 }
+@media screen and (min-width: $desktop){
+  main {
+    max-width: $desktop;
+    padding: 0;
+  }
+
+  h1 {
+    padding-left: 0;
+  }
+
+}
+

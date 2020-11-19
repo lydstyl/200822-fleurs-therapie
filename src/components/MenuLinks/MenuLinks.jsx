@@ -6,12 +6,6 @@ const MenuLinks = ({ handleClick, isClass }) => {
   return (
     <>
       <li>
-        <Link onClick={handleClick} className={isClass ? "b-link" : ""} to="/">
-          Accueil
-        </Link>
-      </li>
-
-      <li>
         <Link
           onClick={handleClick}
           className={isClass ? "b-link" : ""}
