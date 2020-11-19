@@ -1,8 +1,5 @@
 @import '../../variables.scss';
 
-
-// @import url("https://fonts.googleapis.com/css2?family=Atma:wght@500&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Allura&family=Open+Sans&display=swap");
 
 body {
@@ -42,6 +39,7 @@ a{
 }
 
 img {
+  max-width: 100%;
   border-radius: 4px;
 }
 
