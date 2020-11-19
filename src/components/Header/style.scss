@@ -4,6 +4,9 @@ header {
   margin-bottom: 1.45rem;
   background: $dark;
 
+  -webkit-box-shadow: 0px 6px 12px 1px rgba(0, 0, 0, 0.73); 
+  box-shadow: 0px 6px 12px 1px rgba(0, 0, 0, 0.73);
+
   .header-elements {
     display: flex;
     justify-content: space-between;

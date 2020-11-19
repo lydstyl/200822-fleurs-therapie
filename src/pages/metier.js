@@ -13,7 +13,7 @@ const Metier = ({
   <Layout>
     <SEO title="Mon métier" />
 
-    <h1>Mon métier</h1>
+    <h2>Mon métier</h2>
 
     <div className="content">{parse(job)}</div>
 

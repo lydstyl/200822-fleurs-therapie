@@ -21,7 +21,7 @@ const IndexPage = ({ data: { datoCmsHomePage } }) => {
   return (
     <Layout>
       <SEO title={title} />
-      <h1>{title}</h1>
+      <h2>{title}</h2>
 
       <div className="intro">{parse(html)}</div>
 

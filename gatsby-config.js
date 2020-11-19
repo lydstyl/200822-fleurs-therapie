@@ -1,12 +1,9 @@
-// require("dotenv").config({
-//   path: `.env.${process.env.NODE_ENV}`,
-// })
 require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    title: `Fleurs Thérapie`,
-    description: `Soignez vous avec les fleurs de bach.`,
+    title: `Thérapie florale`,
+    description: `Améliorer votre santé avec les fleurs de Bach.`,
     author: `Gabriel Brun`,
   },
   plugins: [

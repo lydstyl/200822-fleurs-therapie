@@ -15,7 +15,7 @@ const Origines = ({
   return (
     <Layout>
       <SEO title="Origines" />
-      <h1>Origines</h1>
+      <h2>Origines</h2>
 
       <div className="content">{parse(content)}</div>
 

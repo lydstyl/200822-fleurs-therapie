@@ -13,7 +13,7 @@ const Contact = ({
   <Layout>
     <SEO title="Contact" />
 
-    <h1>Contact</h1>
+    <h2>Contact</h2>
 
     <div className="content">{parse(contact)}</div>
 
