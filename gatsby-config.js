@@ -3,7 +3,7 @@ require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: `Thérapie florale`,
-    description: `Améliorer votre santé avec les fleurs de Bach.`,
+    description: `Avec les fleurs de Bach, rééquilibrez votre santé ; votre concentration au travail et/ou lors d'études ; durant votre sport nature, avec votre animal.`,
     author: `Gabriel Brun`,
   },
   plugins: [

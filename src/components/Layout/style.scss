@@ -33,7 +33,6 @@ h2 {
 }
 
 p {
-  text-indent: 50px;
   text-align: justify;
 }
 
@@ -44,4 +43,19 @@ a{
 
 img {
   border-radius: 4px;
+}
+
+.space, article {
+  margin: 50px auto;
+}
+
+.content{
+  margin-bottom: 100px;
+}
+
+
+@media screen and (min-width: 768px){
+  p {
+    text-indent: 50px;
+  }
 }
