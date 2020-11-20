@@ -41,12 +41,10 @@ a{
 }
 
 img {
+  display: block;
   max-width: 100%;
+  margin: 50px auto !important;
   border-radius: 4px;
-}
-
-.space, article {
-  margin: 50px auto;
 }
 
 .content{
