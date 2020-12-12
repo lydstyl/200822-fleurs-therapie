@@ -17,7 +17,7 @@ const Contact = ({
 
     <div className='content'>{parse(contact)}</div>
 
-    {/* <form method='post' netlify-honeypot='bot-field' data-netlify='true' name='contact'>
+    <form method='post' netlify-honeypot='bot-field' data-netlify='true' name='contact'>
       <input type='hidden' name='bot-field' />
       <input type='hidden' name='form-name' value='contact' />
 
@@ -39,7 +39,7 @@ const Contact = ({
       </label>
       <button type='submit'>Send</button>
       <input type='reset' value='Clear' />
-    </form> */}
+    </form>
 
     <form name='contact' method='POST' data-netlify='true'>
       <p>
