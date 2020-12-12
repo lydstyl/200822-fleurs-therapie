@@ -22,7 +22,7 @@ const Contact = ({
       <input type='hidden' name='form-name' value='contact' />
 
       <label>
-        Name
+        Nom
         <input type='text' name='name' id='name' />
       </label>
       <label>
@@ -30,30 +30,24 @@ const Contact = ({
         <input type='email' name='email' id='email' />
       </label>
       <label>
-        Subject
-        <input type='text' name='subject' id='subject' />
+        Téléphone
+        <input
+          type='tel' id='phone' name='phone'
+          // pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
+          required
+        />
       </label>
+
       <label>
         Message
         <textarea name='message' id='message' rows='5' />
       </label>
-      <button type='submit'>Send</button>
-      <input type='reset' value='Clear' />
-    </form>
 
-    <form name='contact' method='POST' data-netlify='true'>
-      <p>
-        <label>Votre nom: <input type='text' name='name' /></label>
-      </p>
-      <p>
-        <label>Votre Email: <input type='email' name='email' /></label>
-      </p>
-      <p>
-        <label>Message: <textarea name='message' /></label>
-      </p>
-      <p>
+      <div className='buttons'>
+
         <button type='submit'>Envoyer</button>
-      </p>
+        <input type='reset' value='Effacer' />
+      </div>
     </form>
 
     <Link to='/'>Revenir à la page d'acceuil</Link>
