@@ -1,25 +1,23 @@
-import React from "react"
-import { Link } from "gatsby"
-import parse from "html-react-parser"
+import React from 'react'
+import { Link } from 'gatsby'
+import parse from 'html-react-parser'
 
-import Layout from "../components/Layout/Layout"
-import SEO from "../components/seo"
+import Layout from '../components/Layout/Layout'
+import SEO from '../components/seo'
 
 const Origines = ({
   data: {
-    datoCmsOrigin: { content },
-  },
+    datoCmsOrigin: { content }
+  }
 }) => {
-  console.log("data", content)
-
   return (
     <Layout>
-      <SEO title="Origines" />
+      <SEO title='Origines' />
       <h2>Origines</h2>
 
-      <div className="content">{parse(content)}</div>
+      <div className='content'>{parse(content)}</div>
 
-      <Link to="/">Revenir à la page d'acceuil</Link>
+      <Link to='/'>Revenir à la page d'acceuil</Link>
     </Layout>
   )
 }
