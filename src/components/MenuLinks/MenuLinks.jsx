@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react'
 
-import { Link } from "gatsby"
+import { Link } from 'gatsby'
 
 const MenuLinks = ({ handleClick, isClass }) => {
   return (
@@ -8,8 +8,18 @@ const MenuLinks = ({ handleClick, isClass }) => {
       <li>
         <Link
           onClick={handleClick}
-          className={isClass ? "b-link" : ""}
-          to="/origines/"
+          className={isClass ? 'b-link' : ''}
+          to='/presentation/'
+        >
+          Présentation
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          onClick={handleClick}
+          className={isClass ? 'b-link' : ''}
+          to='/origines/'
         >
           Origines
         </Link>
@@ -18,8 +28,8 @@ const MenuLinks = ({ handleClick, isClass }) => {
       <li>
         <Link
           onClick={handleClick}
-          className={isClass ? "b-link" : ""}
-          to="/metier/"
+          className={isClass ? 'b-link' : ''}
+          to='/metier/'
         >
           Métier
         </Link>
@@ -28,8 +38,8 @@ const MenuLinks = ({ handleClick, isClass }) => {
       <li>
         <Link
           onClick={handleClick}
-          className={isClass ? "b-link" : ""}
-          to="/applications/"
+          className={isClass ? 'b-link' : ''}
+          to='/applications/'
         >
           Applications
         </Link>
@@ -38,8 +48,18 @@ const MenuLinks = ({ handleClick, isClass }) => {
       <li>
         <Link
           onClick={handleClick}
-          className={isClass ? "b-link" : ""}
-          to="/contact/"
+          className={isClass ? 'b-link' : ''}
+          to='/tarif/'
+        >
+          Tarifs
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          onClick={handleClick}
+          className={isClass ? 'b-link' : ''}
+          to='/contact/'
         >
           Contact
         </Link>
